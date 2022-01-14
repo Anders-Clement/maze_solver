@@ -124,10 +124,9 @@ int main()
 	}
 
 	float scale = 1000.0 / float(maze.cols);
-	
-	cout << "scaling to " << scale << "\n";
 	if (scale < .1)
 		scale = .1;
+	cout << "scaling to " << scale << "\n";
 
 	Mat nodeImg;
 	maze.copyTo(nodeImg);
